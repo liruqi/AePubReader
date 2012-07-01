@@ -318,7 +318,7 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     NSLog(@"shouldAutorotate");
     [self updatePagination];
-	return YES;
+	return interfaceOrientation == UIInterfaceOrientationPortrait || interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown;
 }
 
 #pragma mark -
